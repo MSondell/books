@@ -1,20 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Library from '../views/Library.vue'
-import Book from '../views/Book.vue'
+import BookItemList from '../views/BookItemList.vue'
+import BookItem from '../views/BookItem.vue'
 
 Vue.use(VueRouter)
 
   const routes = [
   {
     path: '/',
-    name: 'Library',
-    component: Library
+    name: 'BookItemList',
+    component: BookItemList
   },
   {
-    path: '/',
-    name: 'Book',
-    component: Book
+    path: '/bookItem/id=:bookItemId',
+    name: 'BookItem',
+    component: BookItem
   }
   
 ]
